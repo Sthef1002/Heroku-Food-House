@@ -1,0 +1,14 @@
+.Dishcard {
+    float: left;
+    max-width: 16rem;
+    height: 16rem;
+    margin: 0.5rem;
+    overflow: hidden;
+    color: black;
+    font-size: 100pt;
+  }
+ 
+img {
+  border-radius: 5px;
+  height: 16rem;
+}
