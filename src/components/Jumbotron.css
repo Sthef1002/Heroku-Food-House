@@ -9,15 +9,16 @@
 }
 
 .hero {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 
 
 h1 {
     height: 25px;
+    margin-top: 100px;
     text-align: center;
     font: Bold 50px/60px Helvetica;
     color: white;

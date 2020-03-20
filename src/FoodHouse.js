@@ -19,6 +19,10 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Jumbotron from './components/Jumbotron';
+import RecipeOfDay from './components/RecipeOfDay';
+
+
+
 
 const FoodHouse = () => {
 
@@ -39,54 +43,99 @@ const FoodHouse = () => {
 
   console.log(data);
  
+
   return (
+
+// This section is the navigation bar  
     <Router>
-
       <div>
-        <Navbar className="Navigation">
-          <Navbar.Brand id="food-house-logo" as={Link} to="/" >FoodHouse</Navbar.Brand>
-            <Nav className="mr-auto font">
-              <Nav.Link as={Link} to="/" >Recipes</Nav.Link>
-              <Nav.Link as={Link} to="/about">About</Nav.Link>
-              <Nav.Link as={Link} to="/random">Recipe of the Day</Nav.Link>
-            </Nav>
-        <Form inline>
-          <div className="nightmare">
-            {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
-            <SearchForm as={FormControl} setSearch={setSearch} placeholder="Search" type="text" initialPlaceholder={search} className="mr-sm-2 search-form"/>
-            <Button variant="outline-info" className="search-button">Search</Button>
-          </div>
-        </Form>
-            </Navbar>
+        <Navbar 
+          className="Navigation">
 
-              <Switch>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/random">
-                  <RandomRecipe />
-                </Route>
-                <Route path="/:id" component={DishDetails} />
-                <Route exact path="/">
-                <Jumbotron />
-                  <div>
-                    <h2>
-                      RECIPES
-                    </h2>
-                  </div>
-                  <div className="container">
-                    {data.hits && data.hits.length
-                    ? data.hits.map(meal =>
-                      <DishCard key={meal.idMeal} meal={meal}>
-                      </DishCard>)
-                      : "Nothing found :-/"}
-                  </div>
-              </Route>
-            </Switch>
-    </div>
+          <Navbar.Brand 
+            as={Link} 
+            id="food-house-logo" 
+            to="/" >
+            FoodHouse
+          </Navbar.Brand>
+          <Nav 
+            className="mr-auto font">
+            <Nav.Link 
+              as={Link} 
+              to="/" >
+              Recipes
+            </Nav.Link>
+            <Nav.Link 
+              as={Link} 
+              to="/about">
+              About
+            </Nav.Link>
+            <Nav.Link 
+              as={Link} 
+              to="/random">
+              Recipe of the Day
+            </Nav.Link>
+            </Nav>
+
+{/* This is the navigation bar Search Form */}
+          <Form inline>
+            <div className="nightmare">
+              <SearchForm 
+                as={FormControl} 
+                className="mr-sm-2 search-form"
+                initialPlaceholder={search} 
+                placeholder="Search" 
+                setSearch={setSearch} 
+                type="text" />
+              <Button 
+                className="search-button"
+                variant="outline-info">
+                Search
+              </Button>
+            </div>
+          </Form>
+        </Navbar>
+
+{/* Navigation bar paths */}
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+
+        <Route path="/random">
+          <RandomRecipe />
+        </Route>
+
+        <Route path="/:id" component={DishDetails} />
+        <Route exact path="/">
+        
+{/* Hero section of page */}
+        <Jumbotron />
+        <div>
+          {/* <RecipeOfDay /> */}
+        </div>
+
+{/* Dishes carrousel section */}
+        <div>
+          <h2>
+            RECIPES
+          </h2>
+        </div>
+        <div className="container">
+          {data.hits && data.hits.length
+          ? data.hits.map(meal =>
+            
+            <DishCard 
+              key={meal.idMeal} 
+              meal={meal}>
+            </DishCard>)
+            : "Nothing found :-/"}    
+        </div>
+        </Route>
+      </Switch>
+      </div>
     </Router>
   );
- 
 }
 
 export default FoodHouse;

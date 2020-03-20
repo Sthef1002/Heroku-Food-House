@@ -1,0 +1,25 @@
+.card {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px dashed #FFFFFF;
+    top: 10vh;
+    left: 73vw;
+}
+
+#cardTitle {
+    font: Bold 16px/20px Helvetica;
+    letter-spacing: 0;
+    color: #BE0700;
+}
+
+#recipeName{
+    font: Bold 16px/20px Helvetica;
+    letter-spacing: 0;
+    color: #000000;
+}
+
+#recipeDescription {
+    font: Regular 16px/26px Helvetica;
+    letter-spacing: 0;
+    color: #000000;
+}
+
