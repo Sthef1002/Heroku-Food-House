@@ -18,28 +18,28 @@ const Footer = () => {
     return(
 
 <Jumbotron id="footer">
-  <p
+  <h2
     as={Link} 
     id="footer-fh-logo" 
     to="/" >
     FoodHouse
-    </p>
+    </h2>
     <Nav 
         className="footerNav">
         <Nav.Link 
             as={Link} 
             to="/" >
-            <p>Recipes</p>
+            <h2>Recipes</h2>
         </Nav.Link>
         <Nav.Link 
             as={Link} 
             to="/about">
-            <p>About</p>
+            <h2>About</h2>
         </Nav.Link>
         <Nav.Link 
             as={Link} 
             to="/random">
-            <p>Recipe of the Day</p>
+            <h2>Recipe of the Day</h2>
         </Nav.Link>
     </Nav>
 </Jumbotron>
