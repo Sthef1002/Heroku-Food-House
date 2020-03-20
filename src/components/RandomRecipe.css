@@ -5,4 +5,15 @@
     justify-content: center;
 }
  
+.nightmare {
+    display: flex;
 
+}
+
+.search-form {
+    display: inline;
+}
+
+.search-button {
+    display: inline;
+}

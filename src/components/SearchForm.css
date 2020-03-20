@@ -1,8 +1,21 @@
   input {
     width: 15vw;
     margin: 3 auto;
-    padding: 10px;
-    border-color: midnightblue;   
-    border-radius: 1vh;
+    top: 5px;
+    left: 1353px;
+    width: 307px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px solid #EBEDED;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 16px;
 
   }
+
+  .search-button {
+    color: #BE0700;
+    border-color: #BE0700;
+  }
+
+  

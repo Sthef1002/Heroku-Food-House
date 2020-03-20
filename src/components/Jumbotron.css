@@ -1,0 +1,36 @@
+.jumbotron {
+    background-image: url(../BannerHero.png);
+    background-size: cover;
+    top: 50px;
+    left: 0px;
+    width: 1680px;
+    height: 500px;
+    opacity: 1;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+h1 {
+    height: 25px;
+    text-align: center;
+    font: Bold 50px/60px Helvetica;
+    color: white;
+    justify-content: center;
+
+}
+
+h2 {
+    top: 690px;
+    left: 59px;
+    width: 1025px;
+    height: 20px;
+    text-align: left;
+    font: Bold 24px/20px Helvetica;
+    color: #202124;
+}

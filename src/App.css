@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.Navigation {
+  background-color: #F6F8F9;
+  font: Helvetica;
+
+}
+
+.mr-auto {
+  text-align: left;
+  font: Bold 14px/20px Helvetica ;
+  color: #343638;
+
+}
+
+#food-house-logo {
+  font: Bold 20px/20px Helvetica;
+  letter-spacing: 0;
+  color: #BE0700;
+}
