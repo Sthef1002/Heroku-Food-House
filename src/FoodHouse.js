@@ -64,7 +64,7 @@ const FoodHouse = () => {
             <Nav.Link 
               as={Link} 
               to="/" >
-              Recipes
+              Home
             </Nav.Link>
             <Nav.Link 
               as={Link} 
@@ -137,11 +137,12 @@ const FoodHouse = () => {
         </Route>
       </Switch>
       </div>
-      
+
+{/* This is the footer  */}
       <div>
         <Footer />  
       </div>
-      
+
     </Router>
 
     

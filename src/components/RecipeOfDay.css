@@ -15,6 +15,7 @@
     font: Bold 16px/20px Helvetica;
     letter-spacing: 0;
     color: #000000;
+    padding-top: 10px;
 }
 
 #recipeDescription {

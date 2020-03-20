@@ -1,22 +1,32 @@
 import React from "react";
 import './DishCard.css'
 import { Link } from 'react-router-dom';
+import Pagination from 'react-bootstrap/Pagination'
 
 const DishCard = props => {
 
- return (
+return (
+
+<section>
   <Link
-  to={{
+    to={{
     pathname: `${props.meal.idMeal}`,
-  }}
->
-   <div className="Dishcard">
-     <img className="card-img-top" src={props.meal.strMealThumb} alt={props.meal.strMeal} />
-     {/* <div className="card-body">
-       <h5 className="card-title">{props.meal.strMeal}</h5>
-     </div> */}
-   </div>
-</Link>
+    }}
+  >
+   <div className="dish-card">
+    <img 
+      alt={props.meal.strMeal} 
+      className="card-img-top" 
+      src={props.meal.strMealThumb} 
+    />
+      <div className="card-body-main">
+        <h5 className="card-title-main">
+          {props.meal.strMeal}
+        </h5>
+      </div>
+    </div>
+  </Link>
+</section>
  );
 };
 

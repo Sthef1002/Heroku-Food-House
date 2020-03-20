@@ -1,15 +1,33 @@
-.Dishcard {
+section {
+  margin-left: initial;
+}
+
+.dish-card {
     float: left;
-    max-width: 16rem;
-    height: 16rem;
+    max-width: 360px;
+    height: 252px;
     margin: 0.5rem;
     overflow: hidden;
     color: black;
-    font-size: 100pt;
-  }
+    background: #FFFFFF;
+    border-radius: 6px;
+    margin-left: 40px;
+    align-items: baseline;
+}
+  
  
 img {
-  border-radius: 5px;
+  border-radius: 6px 6px 0px 0px;
   height: 16rem;
+  width: 360px;
+  height: 180px;
+}
+
+.card-title-main{
+  padding: 10px;
+  text-align: left;
+  color: #202124;
+  font: Bold 16px/20px Helvetica;
+
 }
 
