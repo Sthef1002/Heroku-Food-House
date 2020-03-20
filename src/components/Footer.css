@@ -1,0 +1,38 @@
+
+#footer {
+    background-color: #464646;
+    background-image: none;
+    display: flex;
+    /* flex-direction: column; */
+    height: 233px;
+    border-radius: 0vh;
+    margin-bottom: 0vh;
+    margin-top: 100px;
+
+}
+
+p {
+    align-self: auto;
+    font: Bold 14px/20px Helvetica;
+    color: #CBD0D3;
+    margin-left: 10px;
+    height: 13px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+#footer-fh-logo {
+    font: Bold 25px/20px Helvetica;
+    letter-spacing: 0;
+    color: #white;
+    padding-left: 166px;
+    margin-bottom: 15px;
+    padding-top: 8px;
+}
+
+.footerNav {
+    padding-left: 90px;
+    flex-direction: column;
+    margin-bottom: 0px;
+}

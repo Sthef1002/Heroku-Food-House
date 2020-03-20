@@ -21,6 +21,3 @@ const JumBotron = () => {
 }
 
 export default JumBotron;
-
-
-// className='Banner'

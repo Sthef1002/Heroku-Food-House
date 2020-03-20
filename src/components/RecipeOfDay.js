@@ -1,10 +1,14 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
 import './RecipeOfDay.css';
+import { Link } from "react-router-dom";
+import RandomRecipe from "./RandomRecipe.js";
+
 
 const RecipeOfDay = props => {
 
  return (
+
 <Card 
     style={{ width: '26rem' }}
     className="card">
@@ -15,16 +19,13 @@ const RecipeOfDay = props => {
     </Card.Title>
     <Card.Subtitle 
         id="recipeName">
-    hello
+            {/* <RandomRecipe /> */}
+            Ma Po Tofu
     </Card.Subtitle>
     <Card.Text 
         id="recipeDescription">
-      Some quick example text to build on the card title and make up the bulk of
-      the card's content.
+            Put a deep roasting tin onto the bottom shelf of the oven, and make sure that there’s another shelf directly above it. Pull the roasting tin out on its shelf, fill two-thirds with boiling water from the kettle, then...
     </Card.Text>
-    <Card.Link >
-        Another Link
-    </Card.Link>
   </Card.Body>
 </Card>
  );
