@@ -1,13 +1,11 @@
 import React from "react";
 import './DishCard.css'
 import { Link } from 'react-router-dom';
-import Pagination from 'react-bootstrap/Pagination'
 
 const DishCard = props => {
 
 return (
 
-<section>
   <Link
     to={{
     pathname: `${props.meal.idMeal}`,
@@ -26,7 +24,6 @@ return (
       </div>
     </div>
   </Link>
-</section>
  );
 };
 

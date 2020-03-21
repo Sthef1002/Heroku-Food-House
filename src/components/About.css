@@ -1,3 +1,52 @@
-.Hero {
-    width: 100%;
+
+#main-about {
+    flex-direction: row;
+    left: 0px;
+    top: 0px;
+    border: none;
+
+
+}
+
+.about-us{
+    align-items: left; 
+    width: 980px;
+    height: 700px;
+    background-image: url(../About-image.png);
+
+}
+
+.about-content {
+    background-color: #ffffff;
+    width: 700px;
+    padding-left: 117px;
+    padding-right: 163px;
+    padding-top: 111px;
+}
+
+h4{
+    top: 161px;
+    left: 1097px;
+    width: 386px;
+    height: 23px;
+    text-align: left;
+    font: Bold 24px/20px Helvetica;
+    color: #202124;
+    padding-bottom: 65px;
+}
+
+h5{
+    left: 1097px;
+    font: Bold 16px/20px Helvetica;
+    letter-spacing: 0;
+    color: #BE0700;
+    opacity: 1;
+    top: 72px;
+    padding-bottom: 5px;
+}
+
+.content-text {
+    font: Regular 16px/26px Acumin Pro;
+    color: #A6ADB4;
+    margin-bottom: 30px;
 }

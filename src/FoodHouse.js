@@ -21,6 +21,7 @@ import Image from 'react-bootstrap/Image';
 import Jumbotron from './components/Jumbotron';
 import RecipeOfDay from './components/RecipeOfDay';
 import Footer from './components/Footer';
+import Pagination from 'react-bootstrap/Pagination';
 
 
 
@@ -122,6 +123,12 @@ const FoodHouse = () => {
           <h2>
             RECIPES
           </h2>
+          <div>
+            <Pagination>
+              <Pagination.Prev />
+              <Pagination.Next />
+            </Pagination>
+          </div>
         </div>
         <div className="container">
           {data.hits && data.hits.length
