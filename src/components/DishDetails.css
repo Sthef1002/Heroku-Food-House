@@ -1,0 +1,40 @@
+#line-nav{
+    background-color: red;
+}
+
+.details {
+    flex-direction: row;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 117px;
+    margin-bottom: 98px;
+    display: flex;
+}
+
+#left-details {
+    width: 719px;
+    margin-right: 50px;
+}
+
+#title-details{
+    width: 719px;
+
+}
+
+#right-details {
+    width: 471px;
+    height: 391px;
+    border-radius: 6px;
+    margin-top: 111px;
+
+}
+
+#recipe-text{
+    font: Regular 16px/26px Acumin Pro;
+    color: #A6ADB4;
+}
+
+img{
+    height: 360px;
+    border-radius: 6px;
+}
