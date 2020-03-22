@@ -3,24 +3,37 @@
     border: 2px dashed #FFFFFF;
     top: 10vh;
     left: 73vw;
+    
 }
 
 #cardTitle {
-    font: Bold 16px/20px Helvetica;
+    font: Bold 20px Helvetica;
     letter-spacing: 0;
     color: #BE0700;
+    margin-bottom: 10px;
 }
 
 #recipeName{
     font: Bold 16px/20px Helvetica;
     letter-spacing: 0;
     color: #000000;
-    padding-top: 10px;
+
 }
 
 #recipeDescription {
     font: Regular 16px/26px Helvetica;
     letter-spacing: 0;
     color: #000000;
+    white-space: ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+    padding-top: 5px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical
+
+
 }
 

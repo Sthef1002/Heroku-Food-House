@@ -22,10 +22,11 @@
 }
 
 #right-details {
-    width: 471px;
+    width: 360px;
     height: 391px;
     border-radius: 6px;
     margin-top: 111px;
+    margin-bottom: 50px;
 
 }
 
@@ -35,6 +36,7 @@
 }
 
 img{
-    height: 360px;
+    height: 460px;
+    width: 460px;
     border-radius: 6px;
 }

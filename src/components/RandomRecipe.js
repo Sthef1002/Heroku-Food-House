@@ -19,6 +19,7 @@ const RandomRecipe = () => {
       getRandom();
     }, []);
     console.log(random);
+    
   return (
 
 

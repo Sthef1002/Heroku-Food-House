@@ -2,8 +2,9 @@
 #main-about {
     flex-direction: row;
     left: 0px;
-    top: 0px;
+    top: 55px;
     border: none;
+    margin-bottom: 55px;
 
 
 }
