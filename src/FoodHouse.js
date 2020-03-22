@@ -22,6 +22,7 @@ import Jumbotron from './components/Jumbotron';
 import RecipeOfDay from './components/RecipeOfDay';
 import Footer from './components/Footer';
 import Pagination from 'react-bootstrap/Pagination';
+import MainDishCard from './components/MainDishCard'
 
 
 
@@ -46,57 +47,57 @@ const FoodHouse = () => {
   console.log(data);
  
 
-  return (
+return (
 
 // This section is the navigation bar  
-    <Router>
-      <div>
-        <Navbar 
-          className="Navigation">
+  <Router>
+    <div>
+      <Navbar 
+        className="Navigation">
 
-          <Navbar.Brand 
+        <Navbar.Brand 
+          as={Link} 
+          id="food-house-logo" 
+          to="/" >
+          FoodHouse
+        </Navbar.Brand>
+        <Nav 
+          className="mr-auto font">
+          <Nav.Link 
             as={Link} 
-            id="food-house-logo" 
             to="/" >
-            FoodHouse
-          </Navbar.Brand>
-          <Nav 
-            className="mr-auto font">
-            <Nav.Link 
-              as={Link} 
-              to="/" >
-              Home
-            </Nav.Link>
-            <Nav.Link 
-              as={Link} 
-              to="/about">
-              About
-            </Nav.Link>
-            <Nav.Link 
-              as={Link} 
-              to="/random">
-              Recipe of the Day
-            </Nav.Link>
-            </Nav>
+            Home
+          </Nav.Link>
+          <Nav.Link 
+            as={Link} 
+            to="/about">
+            About
+          </Nav.Link>
+          <Nav.Link 
+            as={Link} 
+            to="/random">
+            Recipe of the Day
+          </Nav.Link>
+          </Nav>
 
 {/* This is the navigation bar Search Form */}
-          <Form inline>
-            <div className="nightmare">
-              <SearchForm 
-                as={FormControl} 
-                className="mr-sm-2 search-form"
-                initialPlaceholder={search} 
-                placeholder="Search" 
-                setSearch={setSearch} 
-                type="text" />
-              <Button 
-                className="search-button"
-                variant="outline-info">
-                Search
-              </Button>
-            </div>
-          </Form>
-        </Navbar>
+        <Form inline>
+          <div className="nightmare">
+            <SearchForm 
+              as={FormControl} 
+              className="mr-sm-2 search-form"
+              initialPlaceholder={search} 
+              placeholder="Search" 
+              setSearch={setSearch} 
+              type="text" />
+            <Button 
+              className="search-button"
+              variant="outline-info">
+              Search
+            </Button>
+          </div>
+        </Form>
+      </Navbar>
 
 
 {/* Navigation bar paths */}
@@ -118,26 +119,32 @@ const FoodHouse = () => {
           {/* <RecipeOfDay /> */}
         </div>
 
-{/* Dishes carrousel section */}
-        <div>
+{/* Dishes carrousel top section */}
+        <div id='top-carrousel'>
           <h2>
             RECIPES
           </h2>
           <div>
-            <Pagination>
-              <Pagination.Prev />
-              <Pagination.Next />
+            <Pagination
+            id='pagination'>
+              <Pagination.Prev id='left-side'/>
+              <Pagination.Next id='right-side' />
             </Pagination>
           </div>
         </div>
-        <div className="container">
+
+{/* Dishes carrousel cards section */}
+
+        <div className="container-dish-card">
           {data.hits && data.hits.length
           ? data.hits.map(meal =>
             
-            <DishCard 
+            <MainDishCard 
               key={meal.idMeal} 
-              meal={meal}>
-            </DishCard>)
+              meal={meal}
+              id='main-cards'
+            >
+            </MainDishCard>)
             : "Nothing found :-/"}    
         </div>
 

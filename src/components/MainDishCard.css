@@ -1,0 +1,14 @@
+#card-img-main {
+    border-radius: 0px;
+    height: 16rem;
+    width: 360px;
+    height: 280px;
+  }
+
+  .dish-card{
+      height: 350px;
+  }
+
+  .card-title-page {
+      color: black;
+  }

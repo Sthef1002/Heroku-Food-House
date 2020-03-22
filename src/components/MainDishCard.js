@@ -1,8 +1,8 @@
 import React from "react";
-import './DishCard.css'
 import { Link } from 'react-router-dom';
+import './MainDishCard.css'
 
-const DishCard = props => {
+const MainDishCard = props => {
 
 return (
 
@@ -14,11 +14,11 @@ return (
    <div className="dish-card">
     <img 
       alt={props.meal.strMeal} 
-      id="card-img-top" 
+      id="card-img-main" 
       src={props.meal.strMealThumb} 
     />
-      <div className="card-body-main">
-        <h5 className="card-title-main">
+      <div className="card-body">
+        <h5 className="card-title-page">
           {props.meal.strMeal}
         </h5>
       </div>
@@ -27,5 +27,5 @@ return (
  );
 };
 
-export default DishCard;
+export default MainDishCard;
 
